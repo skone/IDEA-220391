@@ -3,11 +3,13 @@
  */
 package projectA;
 
-import org.testng.annotations.*;
-import static org.testng.Assert.*;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class LibraryTest {
-    @Test public void someLibraryMethodReturnsTrue() {
+    @Test
+    public void someLibraryMethodReturnsTrue() {
         Library classUnderTest = new Library();
         assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
     }
